@@ -44,105 +44,113 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(49, 59);
+            label1.Location = new Point(56, 79);
             label1.Name = "label1";
-            label1.Size = new Size(94, 15);
+            label1.Size = new Size(116, 20);
             label1.TabIndex = 0;
             label1.Text = "Customer Name";
             label1.Click += label1_Click;
             // 
             // textCustomerName
             // 
-            textCustomerName.Location = new Point(186, 56);
+            textCustomerName.Location = new Point(213, 75);
+            textCustomerName.Margin = new Padding(3, 4, 3, 4);
             textCustomerName.Name = "textCustomerName";
-            textCustomerName.Size = new Size(100, 23);
+            textCustomerName.Size = new Size(114, 27);
             textCustomerName.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(49, 99);
+            label2.Location = new Point(56, 132);
             label2.Name = "label2";
-            label2.Size = new Size(111, 15);
+            label2.Size = new Size(140, 20);
             label2.TabIndex = 2;
             label2.Text = "Number of Widgets";
             // 
             // textNumWidgets
             // 
-            textNumWidgets.Location = new Point(186, 91);
+            textNumWidgets.Location = new Point(213, 121);
+            textNumWidgets.Margin = new Padding(3, 4, 3, 4);
             textNumWidgets.Name = "textNumWidgets";
-            textNumWidgets.Size = new Size(100, 23);
+            textNumWidgets.Size = new Size(114, 27);
             textNumWidgets.TabIndex = 3;
             // 
             // lstOut
             // 
             lstOut.FormattingEnabled = true;
-            lstOut.ItemHeight = 15;
-            lstOut.Location = new Point(49, 202);
+            lstOut.Location = new Point(56, 269);
+            lstOut.Margin = new Padding(3, 4, 3, 4);
             lstOut.Name = "lstOut";
-            lstOut.Size = new Size(237, 94);
+            lstOut.Size = new Size(270, 124);
             lstOut.TabIndex = 4;
             // 
             // btnCalc
             // 
-            btnCalc.Location = new Point(48, 330);
+            btnCalc.Location = new Point(55, 440);
+            btnCalc.Margin = new Padding(3, 4, 3, 4);
             btnCalc.Name = "btnCalc";
-            btnCalc.Size = new Size(75, 23);
+            btnCalc.Size = new Size(86, 31);
             btnCalc.TabIndex = 5;
             btnCalc.Text = "calculate Total";
             btnCalc.UseVisualStyleBackColor = true;
             // 
             // btnReset
             // 
-            btnReset.Location = new Point(175, 330);
+            btnReset.Location = new Point(200, 440);
+            btnReset.Margin = new Padding(3, 4, 3, 4);
             btnReset.Name = "btnReset";
-            btnReset.Size = new Size(75, 23);
+            btnReset.Size = new Size(86, 31);
             btnReset.TabIndex = 6;
             btnReset.Text = "Reset";
             btnReset.UseVisualStyleBackColor = true;
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(309, 330);
+            btnClear.Location = new Point(353, 440);
+            btnClear.Margin = new Padding(3, 4, 3, 4);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(75, 23);
+            btnClear.Size = new Size(86, 31);
             btnClear.TabIndex = 7;
             btnClear.Text = "Quit";
             btnClear.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            button1.Location = new Point(48, 330);
+            button1.Location = new Point(55, 440);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(75, 41);
+            button1.Size = new Size(86, 55);
             button1.TabIndex = 5;
-            button1.Text = "calculate Total";
+            button1.Text = "&Calculate Total";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(175, 330);
+            button2.Location = new Point(200, 440);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(75, 41);
+            button2.Size = new Size(86, 55);
             button2.TabIndex = 6;
-            button2.Text = "Reset";
+            button2.Text = "&Reset";
             button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Location = new Point(309, 330);
+            button3.Location = new Point(353, 440);
+            button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
-            button3.Size = new Size(75, 41);
+            button3.Size = new Size(86, 55);
             button3.TabIndex = 7;
-            button3.Text = "Quit";
+            button3.Text = "&Quit";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 556);
+            ClientSize = new Size(914, 741);
             Controls.Add(button3);
             Controls.Add(btnClear);
             Controls.Add(button2);
@@ -154,8 +162,10 @@
             Controls.Add(label2);
             Controls.Add(textCustomerName);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Lutfur Widgets-Vet office 2 Form";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
