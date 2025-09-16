@@ -46,9 +46,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(56, 79);
             label1.Name = "label1";
-            label1.Size = new Size(116, 20);
+            label1.Size = new Size(105, 20);
             label1.TabIndex = 0;
-            label1.Text = "Customer Name";
+            label1.Text = "Animal weight";
             label1.Click += label1_Click;
             // 
             // textCustomerName
@@ -64,9 +64,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(56, 132);
             label2.Name = "label2";
-            label2.Size = new Size(140, 20);
+            label2.Size = new Size(132, 20);
             label2.TabIndex = 2;
-            label2.Text = "Number of Widgets";
+            label2.Text = "Vaccine dose price";
             // 
             // textNumWidgets
             // 
@@ -164,7 +164,7 @@
             Controls.Add(label1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
-            Text = "Lutfur Widgets-Vet office 2 Form";
+            Text = "Lutfur Mojumder-ICA1";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
